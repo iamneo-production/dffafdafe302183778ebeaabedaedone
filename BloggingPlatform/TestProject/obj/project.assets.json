@@ -1144,34 +1144,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\divak\\.nuget\\packages\\": {}
+    "/home/coder/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Studio\\W5_D1_S1_Client\\BloggingPlatform\\TestProject\\TestProject.csproj",
+      "projectUniqueName": "/home/coder/project/workspace/BloggingPlatform/TestProject/TestProject.csproj",
       "projectName": "TestProject",
-      "projectPath": "D:\\Visual Studio\\W5_D1_S1_Client\\BloggingPlatform\\TestProject\\TestProject.csproj",
-      "packagesPath": "C:\\Users\\divak\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Studio\\W5_D1_S1_Client\\BloggingPlatform\\TestProject\\obj\\",
+      "projectPath": "/home/coder/project/workspace/BloggingPlatform/TestProject/TestProject.csproj",
+      "packagesPath": "/home/coder/.nuget/packages/",
+      "outputPath": "/home/coder/project/workspace/BloggingPlatform/TestProject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\divak\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/coder/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Visual Studio\\W5_D1_S1_Client\\BloggingPlatform\\BloggingPlatform\\BloggingPlatform.csproj": {
-              "projectPath": "D:\\Visual Studio\\W5_D1_S1_Client\\BloggingPlatform\\BloggingPlatform\\BloggingPlatform.csproj"
+            "/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/BloggingPlatform.csproj": {
+              "projectPath": "/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/BloggingPlatform.csproj"
             }
           }
         }
@@ -1227,7 +1225,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
       }
     }
   }
