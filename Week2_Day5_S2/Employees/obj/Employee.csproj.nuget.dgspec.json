@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Visual Studio\\W5_D1_S1_Client\\Week2_Day5_S2\\Employees\\Employee.csproj": {}
+    "/home/coder/project/workspace/Week2_Day5_S2/Employees/Employee.csproj": {}
   },
   "projects": {
-    "d:\\Visual Studio\\W5_D1_S1_Client\\Week2_Day5_S2\\Employees\\Employee.csproj": {
+    "/home/coder/project/workspace/Week2_Day5_S2/Employees/Employee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Visual Studio\\W5_D1_S1_Client\\Week2_Day5_S2\\Employees\\Employee.csproj",
+        "projectUniqueName": "/home/coder/project/workspace/Week2_Day5_S2/Employees/Employee.csproj",
         "projectName": "Employee",
-        "projectPath": "d:\\Visual Studio\\W5_D1_S1_Client\\Week2_Day5_S2\\Employees\\Employee.csproj",
-        "packagesPath": "C:\\Users\\divak\\.nuget\\packages\\",
-        "outputPath": "d:\\Visual Studio\\W5_D1_S1_Client\\Week2_Day5_S2\\Employees\\obj\\",
+        "projectPath": "/home/coder/project/workspace/Week2_Day5_S2/Employees/Employee.csproj",
+        "packagesPath": "/home/coder/.nuget/packages/",
+        "outputPath": "/home/coder/project/workspace/Week2_Day5_S2/Employees/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\divak\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/coder/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
         }
       }
     }
