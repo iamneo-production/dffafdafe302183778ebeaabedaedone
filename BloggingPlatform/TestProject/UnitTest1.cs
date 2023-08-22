@@ -31,9 +31,7 @@ namespace BloggingPlatform.Tests
         [SetUp]
         public void Setup()
         {
-            _postcontroller = new PostController();
-             relativeFolderPath = @"/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/Views";
-            fileName = "Index.cshtml";           
+            _postcontroller = new PostController();         
         }
 
         [TearDown]
@@ -51,6 +49,8 @@ namespace BloggingPlatform.Tests
         public void FileExistsTest()
         {
             // Get the absolute path based on the relative path and assert that the file exists
+            relativeFolderPath = @"/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/Views/Post";
+            fileName = "Index.cshtml";  
             string fullPath = Path.Combine(TestContext.CurrentContext.TestDirectory, relativeFolderPath, fileName);
             Assert.IsTrue(File.Exists(fullPath), $"File '{fileName}' does not exist in folder '{relativeFolderPath}'.");
         }
@@ -63,7 +63,12 @@ namespace BloggingPlatform.Tests
         [Test]
         public void Session_3_Test_PostFolder_Exists()
         {
-            bool viewsFolderExists = Directory.Exists(@"BloggingPlatform\\BloggingPlatform\\Views");
+            relativeFolderPath = @"/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/Views";
+            fileName = "Post";
+            string fullPath = Path.Combine(TestContext.CurrentContext.TestDirectory, relativeFolderPath, fileName);
+
+            // fileName = "Index.cshtml";  
+            bool viewsFolderExists = Directory.Exists(relativeFolderPath);
 
             Assert.IsTrue(viewsFolderExists, "Post folder does not exist.");
         }
