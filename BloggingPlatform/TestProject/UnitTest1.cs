@@ -52,7 +52,7 @@ namespace BloggingPlatform.Tests
         [Test]
         public void Session_3_Test_PostFolder_Exists()
         {
-            bool viewsFolderExists = Directory.Exists("BloggingPlatform/BloggingPlatform/Views");
+            bool viewsFolderExists = Directory.Exists(@"BloggingPlatform/BloggingPlatform/Views");
 
             Assert.IsTrue(viewsFolderExists, "Post folder does not exist.");
         }
