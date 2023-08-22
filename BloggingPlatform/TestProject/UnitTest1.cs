@@ -17,7 +17,7 @@ namespace BloggingPlatform.Tests
     public class PostTests
     {
         private const string ViewsFolderPath = "Views";
-        private const string PostViewsFolderPath = "\\home\\coder\\project\\workspace\\dotnetapp\\Views\\Post";
+        private const string PostViewsFolderPath = "D:\\Visual Studio\\W5_D1_S1_Client\\BloggingPlatform\\BloggingPlatform\\Views\\Post";
         private Type _postType;
         private Type controllerType;
         private Type _viewType;
@@ -52,7 +52,7 @@ namespace BloggingPlatform.Tests
         [Test]
         public void Session_3_Test_PostFolder_Exists()
         {
-            bool viewsFolderExists = Directory.Exists("home/coder/project/workspace/BloggingPlatform/BloggingPlatform/Views/Post");
+            bool viewsFolderExists = Directory.Exists("\\Views\\Post\\");
 
             Assert.IsTrue(viewsFolderExists, "Post folder does not exist.");
         }

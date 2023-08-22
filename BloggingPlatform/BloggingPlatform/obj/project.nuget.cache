@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "n8S75ot4wTsbn7GhKGabZyCATy4Fb6eQIg3bo50jgQnic2AaoUTM9EbHkd8lUQ9ObL9MCjpWPZ4z1J+DSfUpQw==",
+  "dgSpecHash": "oyCNNH18WCKBI6R5di9jEZJ5LUCWR6Rw9AYsANnAGPDsdE3d7gvSodrWg5l2/WdQMyixR8rNCXwgBwc1uoC5gA==",
   "success": true,
-  "projectFilePath": "/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/BloggingPlatform.csproj",
+  "projectFilePath": "D:\\Visual Studio\\W5_D1_S1_Client\\BloggingPlatform\\BloggingPlatform\\BloggingPlatform.csproj",
   "expectedPackageFiles": [
-    "/home/coder/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
-    "/home/coder/.nuget/packages/moq/4.20.69/moq.4.20.69.nupkg.sha512",
-    "/home/coder/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    "C:\\Users\\divak\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\divak\\.nuget\\packages\\moq\\4.20.69\\moq.4.20.69.nupkg.sha512",
+    "C:\\Users\\divak\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
