@@ -63,23 +63,18 @@ namespace BloggingPlatform.Tests
         [Test]
         public void Session_3_Test_PostFolder_Exists()
         {
-            relativeFolderPath = @"/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/Views";
-            fileName = "Post";
-            string fullPath = Path.Combine(TestContext.CurrentContext.TestDirectory, relativeFolderPath, fileName);
-
-            // fileName = "Index.cshtml";  
-            bool viewsFolderExists = Directory.Exists(relativeFolderPath);
-
-            Assert.IsTrue(viewsFolderExists, "Post folder does not exist.");
+            relativeFolderPath = @"/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/Views/Post";
+            string fullPath = Path.Combine(TestContext.CurrentContext.TestDirectory, relativeFolderPath);
+            Assert.IsTrue(Directory.Exists(fullPath), $"Directory '{relativeFolderPath}' does not exist.");
         }
 
         [Test]
         public void Session_3_Test_IndexViewFile_Exists()
         {
-            string indexPath = Path.Combine(PostViewsFolderPath, "Index.cshtml");
-            bool indexViewExists = File.Exists(indexPath);
-
-            Assert.IsTrue(indexViewExists, "Index.cshtml view file does not exist.");
+            relativeFolderPath = @"/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/Views/Post";
+            fileName = "Index.cshtml";  
+            string fullPath = Path.Combine(TestContext.CurrentContext.TestDirectory, relativeFolderPath, fileName);
+            Assert.IsTrue(File.Exists(fullPath), $"File '{fileName}' does not exist in folder '{relativeFolderPath}'.");
         }
         [Test]
         public void Session_3_Test_CreateViewFile_Exists()
