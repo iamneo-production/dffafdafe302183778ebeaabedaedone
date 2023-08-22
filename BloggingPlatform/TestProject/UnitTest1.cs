@@ -16,15 +16,13 @@ namespace BloggingPlatform.Tests
     [TestFixture]
     public class PostTests
     {
-        private const string ViewsFolderPath = "Views";
-        private const string PostViewsFolderPath = "Views\\Post";
         private Type _postType;
         private Type controllerType;
         private Type _viewType;
         private Assembly _assembly1;
         private PostController _postcontroller;
         private List<Post> _fakePosts;
-        private string relativeFolderPath; // Set this to the relative path of the folder you want to check
+        private string relativeFolderPath; 
         private string fileName; 
 
 
@@ -43,22 +41,7 @@ namespace BloggingPlatform.Tests
         private static MethodInfo GetMethod(Type type, string methodName, Type[] parameterTypes)
         {
             return type.GetMethod(methodName, BindingFlags.Public | BindingFlags.Instance, null, parameterTypes, null);
-        }
-
-        [Test]
-        public void FileExistsTest()
-        {
-            // Get the absolute path based on the relative path and assert that the file exists
-            relativeFolderPath = @"/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/Views/Post";
-            fileName = "Index.cshtml";  
-            string fullPath = Path.Combine(TestContext.CurrentContext.TestDirectory, relativeFolderPath, fileName);
-            Assert.IsTrue(File.Exists(fullPath), $"File '{fileName}' does not exist in folder '{relativeFolderPath}'.");
-        }
-
-
-        
-
-        
+        }       
 
         [Test]
         public void Session_3_Test_PostFolder_Exists()
@@ -79,35 +62,35 @@ namespace BloggingPlatform.Tests
         [Test]
         public void Session_3_Test_CreateViewFile_Exists()
         {
-            string indexPath = Path.Combine(PostViewsFolderPath, "Create.cshtml");
-            bool indexViewExists = File.Exists(indexPath);
-
-            Assert.IsTrue(indexViewExists, "Create.cshtml view file does not exist.");
+            relativeFolderPath = @"/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/Views/Post";
+            fileName = "Create.cshtml";  
+            string fullPath = Path.Combine(TestContext.CurrentContext.TestDirectory, relativeFolderPath, fileName);
+            Assert.IsTrue(File.Exists(fullPath), $"File '{fileName}' does not exist in folder '{relativeFolderPath}'.");
         }
         [Test]
         public void Session_3_Test_DeleteViewFile_Exists()
         {
-            string indexPath = Path.Combine(PostViewsFolderPath, "Delete.cshtml");
-            bool indexViewExists = File.Exists(indexPath);
-
-            Assert.IsTrue(indexViewExists, "Delete.cshtml view file does not exist.");
+           relativeFolderPath = @"/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/Views/Post";
+            fileName = "Delete.cshtml";  
+            string fullPath = Path.Combine(TestContext.CurrentContext.TestDirectory, relativeFolderPath, fileName);
+            Assert.IsTrue(File.Exists(fullPath), $"File '{fileName}' does not exist in folder '{relativeFolderPath}'.");
         }
         [Test]
         public void Session_3_Test_DetailsViewFile_Exists()
         {
-            string indexPath = Path.Combine(PostViewsFolderPath, "Details.cshtml");
-            bool indexViewExists = File.Exists(indexPath);
-
-            Assert.IsTrue(indexViewExists, "Details.cshtml view file does not exist.");
+            relativeFolderPath = @"/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/Views/Post";
+            fileName = "Details.cshtml";  
+            string fullPath = Path.Combine(TestContext.CurrentContext.TestDirectory, relativeFolderPath, fileName);
+            Assert.IsTrue(File.Exists(fullPath), $"File '{fileName}' does not exist in folder '{relativeFolderPath}'.");
         }
 
         [Test]
         public void Session_3_Test_EditViewFile_Exists()
         {
-            string indexPath = Path.Combine(PostViewsFolderPath, "Edit.cshtml");
-            bool indexViewExists = File.Exists(indexPath);
-
-            Assert.IsTrue(indexViewExists, "Edit.cshtml view file does not exist.");
+            relativeFolderPath = @"/home/coder/project/workspace/BloggingPlatform/BloggingPlatform/Views/Post";
+            fileName = "Edit.cshtml";  
+            string fullPath = Path.Combine(TestContext.CurrentContext.TestDirectory, relativeFolderPath, fileName);
+            Assert.IsTrue(File.Exists(fullPath), $"File '{fileName}' does not exist in folder '{relativeFolderPath}'.");
         }
 
 
